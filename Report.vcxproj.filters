@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="InputData">
+      <UniqueIdentifier>{053a8058-266f-4458-b01a-1ea4cc24b1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OutputData">
+      <UniqueIdentifier>{9ccead49-1724-453a-a962-8fa54949a888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{2ffb0de9-5524-4c2d-9145-d605402693e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ReportGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputReportEntity.cpp">
+      <Filter>OutputData</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputEntity.cpp">
+      <Filter>OutputData</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputHeader.cpp">
+      <Filter>OutputData</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportParser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="InputEntity.cpp">
+      <Filter>InputData</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHeader.cpp">
+      <Filter>InputData</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputReportEntity.h">
+      <Filter>OutputData</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputEntity.h">
+      <Filter>OutputData</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputHeader.h">
+      <Filter>OutputData</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportParser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="InputEntity.h">
+      <Filter>InputData</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHeader.h">
+      <Filter>InputData</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Report.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
