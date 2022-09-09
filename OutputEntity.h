@@ -8,12 +8,6 @@
 
 class OutputEntity
 {
-	private:
-		std::string name;
-		std::string date;
-		std::string totalHours;
-		std::string formattedDate;
-
 	public:
 		void addHours(const std::string& hours);
 		const std::string& getFormattedDate();
@@ -26,4 +20,10 @@ class OutputEntity
 
 		const std::string& getTotalHours() const;
 		void setTotalHours(const std::string& totalHours);
+
+	private:
+		std::string name;
+		std::string date;
+		std::string totalHours;
+		std::string formattedDate;
 };
