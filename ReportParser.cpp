@@ -76,21 +76,10 @@ OutputReportEntity ReportParser::parse(const std::string fileInputPath, char del
 		{
 			outputEntity.addHours(inputEntities[j].getLoggedHours());
 		}
-		
-		if (inputEntities[i].getName() == inputEntities[j].getName() &&
-			inputEntities[i].getMonth() != inputEntities[j].getMonth())
+		else
 		{
 			outputEntities.push_back(outputEntity);
 
-			outputEntity.setName(inputEntities[j].getName());
-			outputEntity.setDate(inputEntities[j].getDate());
-			outputEntity.setTotalHours(inputEntities[j].getLoggedHours());
-		}
-		
-		if (inputEntities[i].getName() != inputEntities[j].getName())
-		{
-			outputEntities.push_back(outputEntity);
-			
 			outputEntity.setName(inputEntities[j].getName());
 			outputEntity.setDate(inputEntities[j].getDate());
 			outputEntity.setTotalHours(inputEntities[j].getLoggedHours());
